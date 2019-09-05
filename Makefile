@@ -1,2 +1,2 @@
 all:
-	docker build -t puppetlabs/gogrpc:latest --no-cache  .
+	docker build -t puppetlabs/gogrpc:go-1.13 --no-cache  .

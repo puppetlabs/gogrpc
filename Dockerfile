@@ -1,4 +1,4 @@
-FROM golang:1.13-buster as builder
+FROM golang:1.12.9-buster as builder
 RUN apt update && apt install unzip
 RUN go get github.com/githubnemo/CompileDaemon && cp /go/bin/CompileDaemon /CompileDaemon
 COPY --from=gcr.io/puppet-discovery/vault-client-alpine:latest /vault_client_bin /vault_client
